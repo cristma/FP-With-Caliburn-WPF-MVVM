@@ -1,0 +1,112 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AE.Infrastructure", "AE.Infrastructure\AE.Infrastructure.csproj", "{852BF8A8-FEDE-442A-A4AB-C09284AEACB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AE.FlightProcedures.AppServices", "AE.FlightProcedures.AppServices\AE.FlightProcedures.AppServices.csproj", "{BAC87E14-5AB9-423C-A2AC-271341D6F5A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AE.FlightProcedures.Domain", "AE.FlightProcedures.Domain\AE.FlightProcedures.Domain.csproj", "{891B3484-661F-456D-ACE5-EDE792CECA4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AE.FlightProcedures.Domain.Calculations", "AE.FlightProcedures.Domain.Calculations\AE.FlightProcedures.Domain.Calculations.csproj", "{385E89E2-4454-4D4B-ABC4-4DBA0A6D3892}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AE.FlightProcedures.Domain.Construction", "AE.FlightProcedures.Domain.Construction\AE.FlightProcedures.Domain.Construction.csproj", "{45E8D9B5-2279-4EF1-8767-E7338F3160B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AE.FlightProcedures.Domain.Evaluation", "AE.FlightProcedures.Domain.Evaluation\AE.FlightProcedures.Domain.Evaluation.csproj", "{1C0E2A38-F8AD-46C8-80DC-6C54212651E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AE.Presentation", "AE.Presentation\AE.Presentation.csproj", "{309517FD-259D-43F3-A299-2C10AD2939B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AE.UserInterface", "AE.UserInterface\AE.UserInterface.csproj", "{79D1B6CD-5FBF-458B-9C6A-0B059C413FFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AE.Common", "AE.Common\AE.Common.csproj", "{A8C0556D-2B05-4707-97A6-04BD77A8FD0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AE.UnitTests", "AE.UnitTests\AE.UnitTests.csproj", "{AD04E658-7890-48BA-8924-E34D52CFD73C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mcrist.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AE.Infrastructure\\AE.Infrastructure.csproj
+		SccProjectName1 = AE.Infrastructure
+		SccLocalPath1 = AE.Infrastructure
+		SccProjectUniqueName2 = AE.FlightProcedures.AppServices\\AE.FlightProcedures.AppServices.csproj
+		SccProjectName2 = AE.FlightProcedures.AppServices
+		SccLocalPath2 = AE.FlightProcedures.AppServices
+		SccProjectUniqueName3 = AE.FlightProcedures.Domain\\AE.FlightProcedures.Domain.csproj
+		SccProjectName3 = AE.FlightProcedures.Domain
+		SccLocalPath3 = AE.FlightProcedures.Domain
+		SccProjectUniqueName4 = AE.FlightProcedures.Domain.Calculations\\AE.FlightProcedures.Domain.Calculations.csproj
+		SccProjectName4 = AE.FlightProcedures.Domain.Calculations
+		SccLocalPath4 = AE.FlightProcedures.Domain.Calculations
+		SccProjectUniqueName5 = AE.FlightProcedures.Domain.Construction\\AE.FlightProcedures.Domain.Construction.csproj
+		SccProjectName5 = AE.FlightProcedures.Domain.Construction
+		SccLocalPath5 = AE.FlightProcedures.Domain.Construction
+		SccProjectUniqueName6 = AE.FlightProcedures.Domain.Evaluation\\AE.FlightProcedures.Domain.Evaluation.csproj
+		SccProjectName6 = AE.FlightProcedures.Domain.Evaluation
+		SccLocalPath6 = AE.FlightProcedures.Domain.Evaluation
+		SccProjectUniqueName7 = AE.Presentation\\AE.Presentation.csproj
+		SccProjectName7 = AE.Presentation
+		SccLocalPath7 = AE.Presentation
+		SccProjectUniqueName8 = AE.UserInterface\\AE.UserInterface.csproj
+		SccProjectName8 = AE.UserInterface
+		SccLocalPath8 = AE.UserInterface
+		SccProjectUniqueName9 = AE.Common\\AE.Common.csproj
+		SccProjectName9 = AE.Common
+		SccLocalPath9 = AE.Common
+		SccProjectUniqueName10 = AE.UnitTests\\AE.UnitTests.csproj
+		SccProjectName10 = AE.UnitTests
+		SccLocalPath10 = AE.UnitTests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{852BF8A8-FEDE-442A-A4AB-C09284AEACB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{852BF8A8-FEDE-442A-A4AB-C09284AEACB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{852BF8A8-FEDE-442A-A4AB-C09284AEACB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{852BF8A8-FEDE-442A-A4AB-C09284AEACB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC87E14-5AB9-423C-A2AC-271341D6F5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC87E14-5AB9-423C-A2AC-271341D6F5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC87E14-5AB9-423C-A2AC-271341D6F5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC87E14-5AB9-423C-A2AC-271341D6F5A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{891B3484-661F-456D-ACE5-EDE792CECA4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{891B3484-661F-456D-ACE5-EDE792CECA4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{891B3484-661F-456D-ACE5-EDE792CECA4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{891B3484-661F-456D-ACE5-EDE792CECA4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{385E89E2-4454-4D4B-ABC4-4DBA0A6D3892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{385E89E2-4454-4D4B-ABC4-4DBA0A6D3892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{385E89E2-4454-4D4B-ABC4-4DBA0A6D3892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{385E89E2-4454-4D4B-ABC4-4DBA0A6D3892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45E8D9B5-2279-4EF1-8767-E7338F3160B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E8D9B5-2279-4EF1-8767-E7338F3160B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45E8D9B5-2279-4EF1-8767-E7338F3160B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45E8D9B5-2279-4EF1-8767-E7338F3160B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C0E2A38-F8AD-46C8-80DC-6C54212651E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C0E2A38-F8AD-46C8-80DC-6C54212651E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C0E2A38-F8AD-46C8-80DC-6C54212651E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C0E2A38-F8AD-46C8-80DC-6C54212651E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{309517FD-259D-43F3-A299-2C10AD2939B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{309517FD-259D-43F3-A299-2C10AD2939B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{309517FD-259D-43F3-A299-2C10AD2939B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{309517FD-259D-43F3-A299-2C10AD2939B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D1B6CD-5FBF-458B-9C6A-0B059C413FFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D1B6CD-5FBF-458B-9C6A-0B059C413FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D1B6CD-5FBF-458B-9C6A-0B059C413FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D1B6CD-5FBF-458B-9C6A-0B059C413FFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8C0556D-2B05-4707-97A6-04BD77A8FD0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8C0556D-2B05-4707-97A6-04BD77A8FD0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8C0556D-2B05-4707-97A6-04BD77A8FD0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8C0556D-2B05-4707-97A6-04BD77A8FD0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD04E658-7890-48BA-8924-E34D52CFD73C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD04E658-7890-48BA-8924-E34D52CFD73C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD04E658-7890-48BA-8924-E34D52CFD73C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD04E658-7890-48BA-8924-E34D52CFD73C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

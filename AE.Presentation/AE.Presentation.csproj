@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{309517FD-259D-43F3-A299-2C10AD2939B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AE.Presentation</RootNamespace>
+    <AssemblyName>AE.Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="BruTile">
+      <HintPath>..\packages\BruTile.0.7.4.4\lib\net40\BruTile.dll</HintPath>
+    </Reference>
+    <Reference Include="BruTile.Desktop">
+      <HintPath>..\packages\BruTile.0.7.4.4\lib\net40\BruTile.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="BruTile.MbTiles">
+      <HintPath>..\packages\BruTile.0.7.4.4\lib\net40\BruTile.MbTiles.dll</HintPath>
+    </Reference>
+    <Reference Include="BruTile.Serialization">
+      <HintPath>..\packages\BruTile.0.7.4.4\lib\net40\BruTile.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Caliburn.Micro">
+      <HintPath>..\packages\Caliburn.Micro-Contrib.1.0.2\lib\Net40\Caliburn.Micro.dll</HintPath>
+    </Reference>
+    <Reference Include="Caliburn.Micro.Contrib">
+      <HintPath>..\packages\Caliburn.Micro-Contrib.1.0.2\lib\Net40\Caliburn.Micro.Contrib.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>..\packages\Common.Logging.2.0.0\lib\2.0\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="DesignTimeProperties.WPF">
+      <HintPath>..\packages\Caliburn.Micro-Contrib.1.0.2\lib\Net40\DesignTimeProperties.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoAPI, Version=1.7.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\GeoAPI.1.7.2\lib\net403-client\GeoAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core">
+      <HintPath>..\packages\GMap.NET.WindowsForms.1.7.1\lib\net40\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms">
+      <HintPath>..\packages\GMap.NET.WindowsForms.1.7.1\lib\net40\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite, Version=1.13.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NetTopologySuite.1.13.2\lib\net403-client\NetTopologySuite.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.GeoTools">
+      <HintPath>..\packages\NetTopologySuite.IO.1.13.2\lib\net403-client\NetTopologySuite.IO.GeoTools.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.MsSqlSpatial">
+      <HintPath>..\packages\NetTopologySuite.IO.1.13.2\lib\net403-client\NetTopologySuite.IO.MsSqlSpatial.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.PostGis">
+      <HintPath>..\packages\NetTopologySuite.IO.1.13.2\lib\net403-client\NetTopologySuite.IO.PostGis.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PowerCollections, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2573bf8a1bdddcd5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NetTopologySuite.1.13.2\lib\net403-client\PowerCollections.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="ProjNet">
+      <HintPath>..\packages\ProjNET4GeoAPI.1.3.0.3\lib\net403-client\ProjNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpMap">
+      <HintPath>..\packages\SharpMap.1.1.0\lib\net40-client\SharpMap.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpMap.UI">
+      <HintPath>..\packages\SharpMap.UI.1.1.0\lib\net40-client\SharpMap.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.99.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.99.0\lib\net45\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq">
+      <HintPath>..\packages\System.Data.SQLite.MSIL.1.0.86.0\lib\net45\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Caliburn.Micro-Contrib.1.0.2\lib\Net40\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutofacBootstrapper.cs" />
+    <Compile Include="Messages\DeviationsUpdatedMessage.cs" />
+    <Compile Include="Modules\PresentationModule.cs" />
+    <Compile Include="ViewModels\Approaches\IApproachCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Approaches\IApproachDetailsViewModel.cs" />
+    <Compile Include="ViewModels\Approaches\IApproachEditViewModel.cs" />
+    <Compile Include="ViewModels\Approaches\IApproachViewModel.cs" />
+    <Compile Include="ViewModels\Approaches\Impl\ApproachCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Approaches\Impl\ApproachDetailsViewModel.cs" />
+    <Compile Include="ViewModels\Approaches\Impl\ApproachEditViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\Approaches\Impl\ApproachViewModel.cs" />
+    <Compile Include="ViewModels\Deviations\IDeviationCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Deviations\IDeviationSummaryViewModel.cs" />
+    <Compile Include="ViewModels\Deviations\Impl\DeviationCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Deviations\Impl\DeviationSummaryViewModel.cs" />
+    <Compile Include="ViewModels\IMainViewModel.cs" />
+    <Compile Include="ViewModels\Impl\MainViewModel.cs" />
+    <Compile Include="ViewModels\Maps\IMapViewModel.cs" />
+    <Compile Include="ViewModels\Maps\Impl\MapViewModel.cs" />
+    <Compile Include="ViewModels\Segments\IEsaEditViewModel.cs" />
+    <Compile Include="ViewModels\Segments\IEsaSegmentDetailsViewModel.cs" />
+    <Compile Include="ViewModels\Segments\Impl\EsaEditViewModel.cs" />
+    <Compile Include="ViewModels\Segments\Impl\EsaSegmentDetailsViewModel.cs" />
+    <Compile Include="ViewModels\Segments\IMsaSegmentDetailsViewModel.cs" />
+    <Compile Include="ViewModels\Segments\IRouteDetailsViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AE.Common\AE.Common.csproj">
+      <Project>{a8c0556d-2b05-4707-97a6-04bd77a8fd0c}</Project>
+      <Name>AE.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AE.FlightProcedures.AppServices\AE.FlightProcedures.AppServices.csproj">
+      <Project>{bac87e14-5ab9-423c-a2ac-271341d6f5a8}</Project>
+      <Name>AE.FlightProcedures.AppServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.99.0\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.99.0\build\net45\System.Data.SQLite.Core.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

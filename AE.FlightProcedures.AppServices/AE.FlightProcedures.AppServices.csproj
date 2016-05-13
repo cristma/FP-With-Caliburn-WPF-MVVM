@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BAC87E14-5AB9-423C-A2AC-271341D6F5A8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AE.FlightProcedures.AppServices</RootNamespace>
+    <AssemblyName>AE.FlightProcedures.AppServices</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\packages\FluentNHibernate.2.0.3.0\lib\net40\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoAPI, Version=1.7.4.0, Culture=neutral, PublicKeyToken=a1a0da7def465678, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\GeoAPI.1.7.4\lib\net45\GeoAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.4.0.1.4000\lib\net40\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NetTopologySuite.1.14\lib\net45\NetTopologySuite.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="PowerCollections, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2573bf8a1bdddcd5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NetTopologySuite.1.14\lib\net45\PowerCollections.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Approaches\Builders\IApproachDtoBuilder.cs" />
+    <Compile Include="Approaches\Builders\Impl\ApproachDtoBuilder.cs" />
+    <Compile Include="Approaches\IApproachService.cs" />
+    <Compile Include="Approaches\Impl\ApproachService.cs" />
+    <Compile Include="Approaches\Impl\Dtos\ApproachDetailsDto.cs" />
+    <Compile Include="Approaches\Impl\Dtos\ApproachSummaryDto.cs" />
+    <Compile Include="Deviations\Builders\IDeviationDtoBuilder.cs" />
+    <Compile Include="Deviations\Builders\Impl\DeviationDtoBuilder.cs" />
+    <Compile Include="Deviations\IDeviationService.cs" />
+    <Compile Include="Deviations\IDeviationServiceFacade.cs" />
+    <Compile Include="Deviations\Impl\DeviationService.cs" />
+    <Compile Include="Deviations\Impl\DeviationServiceFacade.cs" />
+    <Compile Include="Deviations\Impl\Dtos\DeviationSummaryDto.cs" />
+    <Compile Include="Approaches\Builders\IEsaDtoBuilder.cs" />
+    <Compile Include="Approaches\Builders\Impl\EsaDtoBuilder.cs" />
+    <Compile Include="Approaches\Impl\Dtos\EsaSummaryDto.cs" />
+    <Compile Include="Modules\AppServicesModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AE.Common\AE.Common.csproj">
+      <Project>{a8c0556d-2b05-4707-97a6-04bd77a8fd0c}</Project>
+      <Name>AE.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AE.FlightProcedures.Domain.Calculations\AE.FlightProcedures.Domain.Calculations.csproj">
+      <Project>{385e89e2-4454-4d4b-abc4-4dba0a6d3892}</Project>
+      <Name>AE.FlightProcedures.Domain.Calculations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AE.FlightProcedures.Domain.Construction\AE.FlightProcedures.Domain.Construction.csproj">
+      <Project>{45e8d9b5-2279-4ef1-8767-e7338f3160b6}</Project>
+      <Name>AE.FlightProcedures.Domain.Construction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AE.FlightProcedures.Domain.Evaluation\AE.FlightProcedures.Domain.Evaluation.csproj">
+      <Project>{1c0e2a38-f8ad-46c8-80dc-6c54212651e6}</Project>
+      <Name>AE.FlightProcedures.Domain.Evaluation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AE.FlightProcedures.Domain\AE.FlightProcedures.Domain.csproj">
+      <Project>{891b3484-661f-456d-ace5-ede792ceca4c}</Project>
+      <Name>AE.FlightProcedures.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AE.Infrastructure\AE.Infrastructure.csproj">
+      <Project>{852bf8a8-fede-442a-a4ab-c09284aeacb4}</Project>
+      <Name>AE.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Segments\Builders\Impl\" />
+    <Folder Include="Segments\Impl\Dtos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
